@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="customer_register_success">
+        <observer name="Abhinay_Custom_Customer_Register" instance="Abhinay\Custom\Observer\NewCustomerRegistration"/>
+    </event>
+    <event name="customer_account_edited">
+        <observer name="Abhinay_Custom_Customer_Updated" instance="Abhinay\Custom\Observer\CustomerInfoUpdate"/>
+    </event>
+</config>

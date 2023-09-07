@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <abhinay>
+            <general>
+                <api_url_create>www.devmagepwa.com/rest-api/items/create</api_url_create>
+                <api_url_update>www.devmagepwa.com/rest-api/items/update</api_url_update>
+            </general>
+        </abhinay>
+    </default>
+</config>

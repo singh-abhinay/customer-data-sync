@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="abhinay" translate="label" sortOrder="550">
+            <label>Abhinay</label>
+        </tab>
+        <section id="abhinay" showInDefault="1" showInWebsite="1" showInStore="1" type="text" translate="label"
+                 sortOrder="100">
+            <label>Custom Module</label>
+            <tab>abhinay</tab>
+            <resource>Abhinay_Custom::abhinay_cofig</resource>
+            <group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10">
+                <label>Third-Party Data Sync Configurations</label>
+                <field id="api_url_create" translate="label" type="text" sortOrder="30" showInDefault="1"
+                       showInStore="1">
+                    <label>Third Party Url For Create</label>
+                    <comment>API end points are baseUrl and /rest-api/items/create for create.</comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="api_url_update" translate="label" type="text" sortOrder="40" showInDefault="1"
+                       showInStore="1">
+                    <label>Third Party Url For Update</label>
+                    <comment>API end points are baseUrl and /rest-api/items/update for update.</comment>
+                    <validate>required-entry</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
